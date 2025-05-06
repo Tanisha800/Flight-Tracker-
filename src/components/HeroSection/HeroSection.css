@@ -1,7 +1,7 @@
-.hero {
+hero {
   width: 100%;
   min-height: 100vh;
-  background-color: #273F4F;
+  background-color: #E8EDF3;
   position: relative;
   display: flex;
   align-items: center;
@@ -9,7 +9,7 @@
 }
 
 .hero-overlay {
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(255, 255, 255, 0.95);
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -19,7 +19,7 @@
 }
 
 .hero-left {
-  color: #EFEEEA;
+  color: #1A1A1A;
   max-width: 50%;
 }
 
@@ -27,6 +27,7 @@
   font-size: 2.8rem;
   font-weight: 700;
   margin-bottom: 16px;
+  color: #004E89;
 }
 
 .hero-left p {
@@ -34,7 +35,7 @@
   font-weight: 400;
   margin-bottom: 32px;
   line-height: 1.6;
-  color: #CCCCCC;
+  color: #333;
 }
 
 .hero-buttons .btn {
@@ -48,24 +49,24 @@
 }
 
 .primary {
-  background-color: #FE7743;
-  color: #000000;
+  background-color: #F25C05;
+  color: #FFFFFF;
 }
 
 .secondary {
-  background-color: #000000;
-  color: #FE7743;
+  background-color: #004E89;
+  color: #FFFFFF;
 }
 
 /* FORM */
 .contact-card h2 {
-  color: #FE7743;
+  color: #004E89;
   font-weight: 700;
   margin-bottom: 4px;
 }
 
 .contact-card p {
-  color: #EFEEEA;
+  color: #333;
   font-size: 0.95rem;
   margin-bottom: 20px;
 }
@@ -73,10 +74,10 @@
 .hero-right {
   max-width: 400px;
   width: 100%;
-  background-color: #000000;
+  background-color: #FFFFFF;
   border-radius: 16px;
   padding: 32px 24px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
   box-sizing: border-box;
 }
 
@@ -86,22 +87,22 @@ form textarea {
   width: 100%;
   padding: 12px 14px;
   margin-bottom: 16px;
-  background-color: #273F4F;
-  border: 1px solid #FE7743;
+  background-color: #E8EDF3;
+  border: 1px solid #004E89;
   border-radius: 8px;
   font-size: 0.95rem;
   outline: none;
-  color: #EFEEEA;
+  color: #1A1A1A;
   box-sizing: border-box;
 }
 
 form select {
-  color: #EFEEEA;
+  color: #1A1A1A;
 }
 
 .submit-btn {
-  background-color: #FE7743;
-  color: #000000;
+  background-color: #F25C05;
+  color: #FFFFFF;
   padding: 12px 18px;
   border: none;
   width: 100%;
@@ -114,11 +115,11 @@ form select {
 }
 
 .submit-btn:hover {
-  background-color: #e25c34;
+  background-color: #d94d00;
 }
 
 .send-icon {
   margin-right: 8px;
   font-size: 1.1rem;
-  color: #000000;
+  color: #FFFFFF;
 }
