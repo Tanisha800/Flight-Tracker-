@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 12px 24px;
-    background-color: white;
+    background-color: #273F4F;
     position: relative;
   }
   
@@ -12,10 +12,9 @@
     align-items: center;
   }
   
-  
   .brand-name {
     font-weight: 700;
-    color: #2a4b9c;
+    color: #FE7743;
     font-size: 1.75rem;
     padding-left: 20px;
   }
@@ -30,12 +29,12 @@
   .navbar-links li {
     margin: 0 12px;
     font-weight: 600;
-    color: #2b2d42;
+    color: #EFEEEA;
     cursor: pointer;
   }
   
   .navbar-links li:hover {
-    color: #2a4b9c;
+    color: #FE7743;
   }
   
   .navbar-right {
@@ -46,22 +45,24 @@
   .search-box {
     display: flex;
     align-items: center;
-    border: 1px solid #ccc;
+    border: 1px solid #FE7743;
     border-radius: 10px;
     padding: 4px 8px;
     margin-right: 16px;
+    background-color: #000000;
   }
   
   .search-box input {
     border: none;
+    background: transparent;
     outline: none;
     font-size: 0.9rem;
-    color: #444;
+    color: #EFEEEA;
     padding: 4px;
   }
   
   .search-icon {
-    color: #2a4b9c;
+    color: #FE7743;
     font-size: 1.1rem;
     margin-left: 4px;
   }
@@ -70,7 +71,7 @@
     display: flex;
     align-items: center;
     font-weight: 700;
-    color: #2a4b9c;
+    color: #FE7743;
     margin-right: 16px;
   }
   
@@ -83,9 +84,10 @@
     display: none;
     font-size: 1.5rem;
     cursor: pointer;
+    color: #FE7743;
   }
   
-  /* Responsive styles */
+  /* Responsive */
   @media screen and (max-width: 768px) {
     .navbar-links {
       display: none;
@@ -94,9 +96,9 @@
       left: 0;
       right: 0;
       flex-direction: column;
-      background-color: white;
+      background-color: #000000;
       padding: 16px 0;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       z-index: 1000;
     }
   
@@ -108,16 +110,9 @@
       display: block;
     }
   
-    .navbar-right {
-      align-items: center;
-    }
-  
-    .search-box {
-      display: none; /* Hide search on mobile */
-    }
-  
+    .search-box,
     .phone-number {
-      display: none; /* Hide phone on mobile */
+      display: none;
     }
   }
   
