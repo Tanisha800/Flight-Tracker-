@@ -1,5 +1,5 @@
 import React from "react";
-import "/Users/tanisha/Flight tracker capstone project/Flight tracker/src/components/Blog Section/ BlogSection.css";
+import "./BlogSection.css";
 
 const blogPosts = [
   {
