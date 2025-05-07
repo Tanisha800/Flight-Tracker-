@@ -8,13 +8,13 @@ const MissionVision = () => {
         <div className="mv-card">
           <h3>Our Mission</h3>
           <p>
-            To deliver exceptional home services that enhance the comfort, safety, and value of our customers' homes while providing peace of mind through professional, reliable, and transparent service.
+          To provide advanced tracking and automation solutions that drive precision, efficiency, and operational excellence. We are committed to empowering businesses through dependable technology, innovative thinking, and transparent collaboration that builds long-term trust and value.
           </p>
         </div>
         <div className="mv-card">
           <h3>Our Vision</h3>
           <p>
-            To become the most trusted name in home services, setting the industry standard for quality, reliability, and customer satisfaction across the nation.
+          To be the global benchmark for tracking and automation excellence — trusted for our technological leadership, uncompromising quality, and dedication to transforming how the world moves, monitors, and manages data.
           </p>
         </div>
       </div>
