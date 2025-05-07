@@ -32,7 +32,7 @@ const Navbar = () => {
        <SignedIn>
          <UserButton />
        </SignedIn>
-       <button className="btn primary">Login</button>
+       
         <div className="hamburger" onClick={toggleMenu}>
           {menuOpen ? <FiX /> : <FiMenu />}
         </div>
