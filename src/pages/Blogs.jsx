@@ -1,7 +1,7 @@
 import React from 'react'
 import BlogSection from '../components/Blog Section/ BlogSection'
 
-function Blog() {
+function Blogs() {
   return (
     <div style={{background:"#F8FAFC", height:"100vh"}}>
         <div style={{textAlign:"center", padding:"10px 0"}}>
@@ -13,4 +13,4 @@ function Blog() {
   )
 }
 
-export default Blog
+export default Blogs
