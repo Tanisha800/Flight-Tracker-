@@ -1,0 +1,33 @@
+.services-section {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  .overlay {
+    background-color: white;
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .title {
+    color:  #F25C05;
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0 0 20px;
+  }
+  
+  .subtitle {
+    color:#004E89;
+    font-size: 20px;
+    margin: 0;
+    font-weight: bold;
+
+  }
+  
