@@ -11,7 +11,6 @@ import Home from "./pages/Home";
 import Footer from "./components/Footer/Footer";
 import About from "./pages/About";
 import Blogs from "./pages/Blogs";
-import Services from "./components/services/services";
 import Service from "./pages/Service";
 
 
@@ -25,6 +24,7 @@ const App = () => {
         <Route path="/blog" element={<Blogs/>} />
         <Route path="/about" element={<About/>} />
         <Route path="/services" element={<Service/>} /> 
+        
       </Routes>
       <Footer/>
     </>
