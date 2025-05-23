@@ -1,64 +1,134 @@
+/* Section Wrapper */
 .team-section {
-    text-align: center;
-    padding: 20px 100px;
-    background-color: #fff;
-    /* margin: 33.2px 0px 30px; */
-  }
-  
-  .section-title {
-    font-size: 60px;
-    font-weight: bold;
-    margin-bottom: 40px;
-    color: #F25C04;
-  }
-  
-  /* .team-grid {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 30px;
-  } */
+  padding: 3rem 1rem;
+  background-color: #fff;
+  position: relative;
+  color: #F25C04;
+}
 
+/* Section Heading */
+.section-title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
 
+/* Scrollable Horizontal Team Grid */
 .team-grid {
-    display: flex;
-    overflow-x: auto;
-    gap: 20px;
-    padding-bottom: 10px;
-    scrollbar-width: thin;}
-  
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  scroll-behavior: smooth;
+  padding-bottom: 1rem;
+}
+
+/* Optional: Hide scrollbars for cleaner look */
+.team-grid::-webkit-scrollbar {
+  display: none;
+}
+.team-grid {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Team Member Card */
+.team-card {
+  min-width: 100%;
+  max-width: 100%;
+  flex: 0 0 auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+@media (min-width: 640px) {
   .team-card {
-    background: #f9f9f9;
-    border-radius: 10px;
-    overflow: hidden;
-    width: 400px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: left;
+    min-width: 48%;
+    max-width: 48%;
   }
-  
-  .team-image {
-    width: 100%;
-    height: auto;
+}
+
+@media (min-width: 768px) {
+  .team-card {
+    min-width: 32%;
+    max-width: 32%;
   }
-  
-  .team-info {
-    padding: 20px;
-  }
-  
-  .team-name {
-    font-size: 1.25rem;
+}
+
+/* Team Member Image */
+.team-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+}
+
+/* Card Content */
+.team-info {
+  padding: 1rem;
+}
+
+.team-name {
+  font-weight: bold;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+
+.team-title {
+  color: black;
+  font-weight: bold;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.team-description {
+  color: #666;
+  font-size: 0.875rem;
+}
+
+/* Carousel Navigation Buttons (visible only on medium+ screens) */
+.carousel-prev,
+.carousel-next {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .carousel-prev,
+  .carousel-next {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.5rem;
     font-weight: bold;
-    margin-bottom: 5px;
+    z-index: 10;
+    transition: 0.3s;
   }
-  
-  .team-title {
-    font-size: 1rem;
-    color: #666;
-    margin-bottom: 10px;
+
+  .carousel-prev:hover,
+  .carousel-next:hover {
+    background: #f0f0f0;
   }
-  
-  .team-description {
-    font-size: 0.95rem;
-    color: #333;
+
+  .carousel-prev {
+    left: 0;
   }
-  
+
+  .carousel-next {
+    right: 0;
+  }
+}

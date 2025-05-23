@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useRef} from 'react'
 import'./Teamsection.css'
 const teamMembers=[
     {
@@ -40,6 +40,15 @@ const teamMembers=[
 
 const Teamsection=()=>{
 
+    const carouselRef = useRef(null);
+
+    const scroll = (direction) => {
+      const container = carouselRef.current;
+      if (!container) return;
+  
+      const scrollAmount = container.offsetWidth / 1.5;
+      container.scrollBy({ left: direction === 'left' ? -scrollAmount : scrollAmount, behavior: 'smooth' });
+    };
     
 
     return(
@@ -58,6 +67,8 @@ const Teamsection=()=>{
 
                 ))}
             </div>
+            <button className="carousel-prev" onClick={() => scroll('left')}>‹</button>
+            <button className="carousel-next" onClick={() => scroll('right')}>›</button>
 
     
 
