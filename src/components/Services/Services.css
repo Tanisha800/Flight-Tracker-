@@ -1,19 +1,12 @@
-.services-section {
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-  }
+
   
   .overlay {
     background-color: white;
     padding: 40px;
     text-align: center;
-    width: 100%;
+    width: 95%;
+    background:url('https://media.istockphoto.com/id/1476230011/photo/airplane-flight-attendant-serving-orange-juice-to-female-passenger-in-cabin.jpg?s=1024x1024&w=is&k=20&c=qw8x4wRgsObT-jv01Y4I6ZmmjvwJP2DkQG8lGBlWZ4o=')
+    ;
   }
   
   .title {
@@ -21,6 +14,7 @@
     font-size: 48px;
     font-weight: bold;
     margin: 0 0 20px;
+
   }
   
   .subtitle {

@@ -2,7 +2,7 @@ import React from "react";
 import './Services.css';
 function Services(){
     return(
-        <div className="services-setion">
+        <div className="services-section">
         <div className='overlay'>
         <h2 className='title'>Our Services</h2>
         <p className="subtitle">
