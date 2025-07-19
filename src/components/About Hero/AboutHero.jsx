@@ -22,6 +22,7 @@ const AboutHero = () => {
         </p>
         <p>
         Over the years, we have broadened our capabilities, expanded our service portfolio, and invested in top-tier talent. With every milestone, we've upheld our dedication to performance, security, and customer satisfaction. From real-time tracking to smart automation, our journey reflects a relentless drive toward innovation and exceeding expectations.
+       
         </p>
       </div>
     </section>
@@ -31,5 +32,6 @@ const AboutHero = () => {
 };
 
 export default AboutHero;
+
   
   

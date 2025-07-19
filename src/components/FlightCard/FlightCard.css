@@ -1,0 +1,23 @@
+.flight-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    margin-bottom: 1rem;
+  }
+  
+  .heart-btn {
+    background: transparent;
+    border: none;
+    font-size: 22px;
+    color: #bbb;
+    cursor: pointer;
+  }
+  
+  .heart-btn.active {
+    color: #e74c3c;
+  }
+  

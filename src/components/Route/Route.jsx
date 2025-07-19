@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Route.css";
+import FlightCard from "../FlightCard/FlightCard"; // ✅ Adjust if path is different
 
 function Route() {
   const [from, setFrom] = useState("");
@@ -9,18 +10,21 @@ function Route() {
 
   const staticRoutes = [
     {
+      id: "AI101",
       departure_airport: "Indira Gandhi Intl (DEL)",
       arrival_airport: "Chhatrapati Shivaji Intl (BOM)",
       airline_name: "Air India",
       direct: true,
     },
     {
+      id: "6E202",
       departure_airport: "Indira Gandhi Intl (DEL)",
       arrival_airport: "Chhatrapati Shivaji Intl (BOM)",
       airline_name: "IndiGo",
       direct: false,
     },
     {
+      id: "SG303",
       departure_airport: "Kempegowda Intl (BLR)",
       arrival_airport: "Chhatrapati Shivaji Intl (BOM)",
       airline_name: "SpiceJet",
@@ -46,7 +50,7 @@ function Route() {
 
   return (
     <div className="route-container">
-      <h2 className="route-title">📍 Plan Route</h2>
+      <h2 className="route-title">Plan Route</h2>
 
       <div className="route-inputs">
         <div>
@@ -89,13 +93,21 @@ function Route() {
         <div className="results">
           <h3>Routes Found:</h3>
           {results.length > 0 ? (
-            <ul>
-              {results.map((route, idx) => (
-                <li key={idx}>
-                  {route.departure_airport} → {route.arrival_airport} ({route.airline_name})
-                </li>
+            <div className="flight-results">
+              {results.map((route) => (
+                <FlightCard
+                  key={route.id}
+                  flight={{
+                    id: route.id,
+                    route: `${route.departure_airport} → ${route.arrival_airport}`,
+                    time: "12:00", // static dummy
+                    airline: route.airline_name,
+                    gate: "A1",
+                    aircraft: "Boeing 737",
+                  }}
+                />
               ))}
-            </ul>
+            </div>
           ) : (
             <p>No routes found.</p>
           )}

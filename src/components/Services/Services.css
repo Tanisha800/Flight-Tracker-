@@ -1,27 +1,40 @@
+.overlay {
+  position: relative;
+  width: 95%;
+  padding: 40px;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 10px;
+}
 
-  
-  .overlay {
-    background-color: white;
-    padding: 40px;
-    text-align: center;
-    width: 95%;
-    background:url('https://media.istockphoto.com/id/1476230011/photo/airplane-flight-attendant-serving-orange-juice-to-female-passenger-in-cabin.jpg?s=1024x1024&w=is&k=20&c=qw8x4wRgsObT-jv01Y4I6ZmmjvwJP2DkQG8lGBlWZ4o=')
-    ;
-  }
-  
-  .title {
-    color:  #F25C05;
-    font-size: 48px;
-    font-weight: bold;
-    margin: 0 0 20px;
+.blur-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://media.istockphoto.com/id/1476230011/photo/airplane-flight-attendant-serving-orange-juice-to-female-passenger-in-cabin.jpg?s=1024x1024&w=is&k=20&c=qw8x4wRgsObT-jv01Y4I6ZmmjvwJP2DkQG8lGBlWZ4o=') center center/cover no-repeat;
+  filter: blur(4px);
+  opacity: 0.4;
+  z-index: 0;
+}
 
-  }
-  
-  .subtitle {
-    color:#004E89;
-    font-size: 20px;
-    margin: 0;
-    font-weight: bold;
+/* Text stays on top */
+.overlay > h2,
+.overlay > p {
+  position: relative;
+  z-index: 1;
+}
 
-  }
-  
+.title {
+  color: #F25C05;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  color: #004E89;
+  font-size: 18px;
+  font-weight: bold;
+}

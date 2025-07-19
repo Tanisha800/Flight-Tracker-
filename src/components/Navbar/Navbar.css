@@ -133,3 +133,16 @@
   background-color: #2a4b9c;
   color: #fff;
 }
+.wishlist-icon {
+  font-size: 22px;
+  color: #e74c3c;
+  margin-right: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.wishlist-icon:hover {
+  transform: scale(1.2);
+}
+
+
+

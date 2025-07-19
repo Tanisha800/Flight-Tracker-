@@ -1,14 +1,16 @@
 .blog-section {
-    padding: 3rem 1rem;
+    padding: 4rem 1rem;
     background-color: #f8fafc;
+
   }
   
   .blog-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 2rem;
+    gap: 3rem;
     max-width: 1200px;
     margin: 0 auto;
+ 
   }
   
   .blog-card {
