@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./HeroSection.css";
 import { FiSend } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   const [showToast, setShowToast] = useState(false);
@@ -20,11 +21,16 @@ const HeroSection = () => {
         <div className="hero-left">
           <h1>Track Flight in Real-Time</h1>
           <p>
-            Get accurate flight information, live tracking, and instant alerts for any flight worldwide.
+            Get accurate flight information, live tracking, and instant alerts
+            for any flight worldwide.
           </p>
           <div className="hero-buttons">
-            <button className="btn primary">Track a Flight</button>
-            <button className="btn secondary">Learn More</button>
+            <Link to="/services" className="btn primary">
+              Track a Flight
+            </Link>
+            <Link to="/about" className="btn secondary">
+              Learn More
+            </Link>
           </div>
         </div>
 
@@ -35,9 +41,13 @@ const HeroSection = () => {
               <input type="text" placeholder="Your Name" required />
               <input type="email" placeholder="Email Address" required />
               <input type="tel" placeholder="Phone Number" required />
-              <textarea placeholder="Tell us about your needs" rows="3"></textarea>
+              <textarea
+                placeholder="Tell us about your needs"
+                rows="3"
+              ></textarea>
               <button type="submit" className="submit-btn">
-                <FiSend className="send-icon" />Submit
+                <FiSend className="send-icon" />
+                Submit
               </button>
             </form>
           </div>

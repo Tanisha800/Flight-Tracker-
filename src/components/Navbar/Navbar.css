@@ -3,25 +3,34 @@
   align-items: center;
   justify-content: space-between;
   padding: 12px 24px;
-  background-color: #FFFFFF;
+  background-color: white;
   position: relative;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
-
+.navl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .navbar-left {
   display: flex;
   align-items: center;
 }
+.admin {
+  padding-left: 4px;
+}
 
 .brand-name {
   font-weight: 700;
-  color: #F25C05;
+  color: #f25c04;
   font-size: 1.75rem;
   padding-left: 20px;
+  text-decoration: none;
 }
 
 .navbar-links {
+  width: 65%;
   display: flex;
+  justify-content: space-between;
   list-style: none;
   margin: 0 32px;
   padding: 0;
@@ -30,95 +39,45 @@
 .navbarl {
   margin: 0 12px;
   font-weight: 600;
-  color: #004E89;
+  color: #2b2d42;
   cursor: pointer;
   text-decoration: none;
 }
 
 .navbarl:hover {
-  color: #F25C05;
+  color: #f25c04;
 }
-
-.navbar-right {
+.navbarr {
   display: flex;
   align-items: center;
+}
+.navbar-right {
+  display: none;
 }
 
 .search-box {
   display: flex;
   align-items: center;
-  border: 1px solid #004E89;
+  border: 1px solid #ccc;
   border-radius: 10px;
   padding: 4px 8px;
   margin-right: 16px;
-  background-color: #E8EDF3;
 }
 
 .search-box input {
   border: none;
-  background: transparent;
   outline: none;
   font-size: 0.9rem;
-  color: #1A1A1A;
+  color: #444;
   padding: 4px;
 }
 
 .search-icon {
-  color: #004E89;
+  color: #f25c04;
   font-size: 1.1rem;
   margin-left: 4px;
 }
 
-.phone-number {
-  display: flex;
-  align-items: center;
-  font-weight: 700;
-  color: #004E89;
-  margin-right: 16px;
-}
-
-.phone-icon {
-  margin-right: 6px;
-  font-size: 1.1rem;
-}
-
-.hamburger {
-  display: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-  color: #004E89;
-}
-
-/* Responsive */
-@media screen and (max-width: 768px) {
-  .navbar-links {
-    display: none;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    right: 0;
-    flex-direction: column;
-    background-color: #FFFFFF;
-    padding: 16px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-    z-index: 1000;
-  }
-
-  .navbar-links.active {
-    display: flex;
-  }
-
-  .hamburger {
-    display: block;
-  }
-
-  .search-box,
-  .phone-number {
-    display: none;
-  }
-}
-
- 
 .btn {
   padding: 12px 24px;
   margin-right: 12px;
@@ -133,16 +92,98 @@
   background-color: #2a4b9c;
   color: #fff;
 }
+
+.phone-number {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  color: #2a4b9c;
+  margin-right: 16px;
+}
+
+.phone-icon {
+  margin-right: 6px;
+  font-size: 1.1rem;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.adminl {
+  color: #2b2d42;
+  cursor: pointer;
+  text-decoration: none;
+}
 .wishlist-icon {
-  font-size: 22px;
-  color: #e74c3c;
-  margin-right: 1rem;
-  transition: transform 0.2s ease;
+  padding: 10px;
+  color: red;
+  font-size: 20px;
 }
 
-.wishlist-icon:hover {
-  transform: scale(1.2);
+/* Responsive styles */
+@media screen and (max-width: 1021px) {
+  .navbar-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background-color: white;
+    padding-top: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    border-radius: 0px 0px 16px 16px;
+  }
+  .navl {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar-links.active {
+    display: flex;
+    width: 100%;
+    margin: 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+  .navbarr {
+    justify-content: center;
+  }
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .search-box {
+    display: none;
+  }
+
+  .brand-name {
+    padding-left: 0;
+  }
+  .navl {
+    align-items: start;
+    gap: 3px;
+  }
+  .navbarl {
+    margin: 0;
+  }
+
+  .list {
+    width: 100vw;
+    border-bottom: 0.1px solid #d7e2ff;
+    padding: 10px;
+  }
+  .navbarr {
+    width: 100%;
+    justify-content: start;
+    padding: 10px;
+  }
 }
-
-
-
