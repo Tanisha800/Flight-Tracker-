@@ -55,29 +55,6 @@
   display: none;
 }
 
-.search-box {
-  display: flex;
-  align-items: center;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  padding: 4px 8px;
-  margin-right: 16px;
-}
-
-.search-box input {
-  border: none;
-  outline: none;
-  font-size: 0.9rem;
-  color: #444;
-  padding: 4px;
-}
-
-.search-icon {
-  color: #f25c04;
-  font-size: 1.1rem;
-  margin-left: 4px;
-}
-
 .btn {
   padding: 12px 24px;
   margin-right: 12px;
@@ -122,7 +99,6 @@
   font-size: 20px;
 }
 
-/* Responsive styles */
 @media screen and (max-width: 1021px) {
   .navbar-links {
     display: none;

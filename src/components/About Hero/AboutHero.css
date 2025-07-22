@@ -62,59 +62,29 @@
   margin-bottom: 1.25rem;
 }
 
-/* ==================== MEDIA QUERIES ==================== */
-
-/* Tablets and below */
-@media (max-width: 1024px) {
-  .about-hero-content h1 {
-    font-size: 2.2rem;
-  }
-
-  .about-hero-content p {
-    font-size: 1rem;
-  }
-
-  .our-history .container {
-    margin: 0 2rem;
-  }
-
-  .our-history h2 {
-    font-size: 2rem;
-  }
-
-  .our-history p {
-    font-size: 1rem;
-  }
+@media (max-width: 600px) {
 }
 
-/* Mobile devices */
-@media (max-width: 600px) {
-  /* .about-hero {
-    height: 40vh;
-    padding: 0 1rem;
-  } */
+.about-hero-content h1 {
+  font-size: 1.8rem;
+}
 
-  .about-hero-content h1 {
-    font-size: 1.8rem;
-  }
+.about-hero-content p {
+  font-size: 0.95rem;
+}
 
-  .about-hero-content p {
-    font-size: 0.95rem;
-  }
+.our-history {
+  padding: 3rem 1rem;
+}
 
-  .our-history {
-    padding: 3rem 1rem;
-  }
+.our-history .container {
+  margin: 0;
+}
 
-  .our-history .container {
-    margin: 0;
-  }
+.our-history h2 {
+  font-size: 1.6rem;
+}
 
-  .our-history h2 {
-    font-size: 1.6rem;
-  }
-
-  .our-history p {
-    font-size: 0.95rem;
-  }
+.our-history p {
+  font-size: 0.95rem;
 }

@@ -11,7 +11,6 @@ const HeroSection = () => {
     setShowToast(true);
     e.target.reset();
 
-    // Hide toast after 3 seconds
     setTimeout(() => setShowToast(false), 3000);
   };
 
@@ -54,7 +53,6 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* ✅ Toast Message */}
       {showToast && (
         <div className="toast">
           <strong>Message Sent!</strong>

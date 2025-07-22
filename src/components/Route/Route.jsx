@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Route.css";
-import FlightCard from "../FlightCard/FlightCard"; // ✅ Adjust if path is different
+import FlightCard from "../FlightCard/FlightCard";
 
 function Route() {
   const [from, setFrom] = useState("");
@@ -100,7 +100,7 @@ function Route() {
                   flight={{
                     id: route.id,
                     route: `${route.departure_airport} → ${route.arrival_airport}`,
-                    time: "12:00", // static dummy
+                    time: "12:00",
                     airline: route.airline_name,
                     gate: "A1",
                     aircraft: "Boeing 737",

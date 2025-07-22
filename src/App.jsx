@@ -24,7 +24,7 @@ const App = () => {
         <Route path="/services" element={<Service />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/wishlist" element={<Wishlist />} />
-        <Route path="/routes" element={<RoutePage />} /> {/* ✅ */}
+        <Route path="/routes" element={<RoutePage />} />
       </Routes>
 
       {location.pathname !== "/wishlist" && <Footer />}

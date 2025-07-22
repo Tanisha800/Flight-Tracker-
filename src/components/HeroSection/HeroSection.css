@@ -62,7 +62,6 @@
   color: #ffffff;
 }
 
-/* FORM */
 .contact-card h2 {
   color: #004e89;
   font-weight: 700;
@@ -162,16 +161,13 @@ form select {
     transform: translateY(20px);
   }
 }
-/* ==================== MEDIA QUERIES ==================== */
 
-/* Tablets and below */
 @media (max-width: 1024px) {
   .hero-overlay {
     flex-direction: column;
     padding: 40px;
 
     height: auto;
-    /* height: auto; */
   }
 
   .hero-left {
