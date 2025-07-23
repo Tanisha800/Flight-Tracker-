@@ -3,7 +3,7 @@ import React from "react";
 import FAQsection from "../components/FAQsection/FAQsection";
 import Tracker from "../components/Tracker/Tracker";
 import Route from "../components/Route/Route";
-import Services from "../components/services/Services";
+import Services from "../components/Services/Services";
 
 function Service() {
   return (
